@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ajio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+img.hover-shadow {
+  transition: 0.5s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 pink, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+* {box-sizing: border-box;}
+
+</style>
+</head>
+<body class="container-fluid">
+  
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="javascript:void(0)" style="font-size: 40px;">AJIO</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)">Women</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)">Men</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)">Kids</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="javascript:void(0)">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://shreenehaa.github.io/loginn/">Login</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">More</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Trends</a></li>
+              <li><a class="dropdown-item" href="#">Indie</a></li>
+              <li><a class="dropdown-item" href="#">Hidden Gems</a></li>
+            </ul>
+          </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Search">
+        <button class="btn btn-secondary" type="button">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<br>
+<br>
+<br>
+
+<div class="container-fluid mt-3">
+ 
+  <div class="row">
+    <div class="col-sm-12 ">
+      <div id="demo" class="carousel slide" data-bs-ride="carousel" >
+      
+          
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+          </div>
+          
+          
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./off1.webp" alt="Los Angeles" class="d-block" style="width:100%;height: 400px;">
+            </div>
+            <div class="carousel-item">
+              <img src="./off5.webp" alt="Chicago" class="d-block" style="width:100%;height: 400px;">
+             
+            </div>
+            <div class="carousel-item">
+              <img src="./off3.jpg" alt="New York" class="d-block" style="width:100%; height: 400px;"> 
+            </div>
+          </div>
+          
+          
+          <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+    
+  </div>
+</div>
+  <br>
+  
+ 
+    <div class="col-container">
+      <div class="p-3 border bg-light">
+    <center><p class="fs-4 text-dark fw-bold"style="font-family: Arial, Helvetica,sans-serif">Most Wanted</p></center>
+    <center><p class="fs-2 text-dark fw-bold">Brands you can't get enough off</p></center>
+    <br>
+    <div class="container-fluid mt-3">
+  
+      <div class="row">
+        <div class="col-sm-3 p-3 bg-light text-dark"><img src="./trends.jpg" style="width:100%" onclick="openmodel();currentSlide(1)" class="hover-shadow cursor"><br><center><small style="font-family: 'Times New Roman', Times, serif;font-size: 25px;">MIN.</small><b style="font-family: 'Times New Roman', Times, serif;font-size: 40px;">70%</b><small style="font-family: 'Times New Roman', Times, serif;font-size: 25px;">OFF*</small></center></div>
+        <div class="col-sm-3 p-3 bg-light text-dark"><img src="./indie.jpg" style="width:100%" onclick="openmodel();currentSlide(1)" class="hover-shadow cursor"><br><center><small style="font-family: 'Times New Roman', Times, serif;font-size: 25px;">UP TO.</small><b style="font-family: 'Times New Roman', Times, serif;font-size: 40px;">60%</b><small style="font-family: 'Times New Roman', Times, serif;font-size: 25px;">OFF*</small></center></div>
+        <div class="col-sm-3 p-3 bg-light text-dark"><img src="./jwe.jpg" style="width:100%" onclick="openmodel();currentSlide(1)" class="hover-shadow cursor"><br><center><small style="font-family: 'Times New Roman', Times, serif;font-size: 25px;">STARTING AT</small><b style="font-family: 'Times New Roman', Times, serif;font-size: 40px;">Rs.199</b></center></div>
+        <div class="col-sm-3 p-3 bg-light text-dark"><img src="./lux.jpg" style="width:100%" onclick="openmodel();currentSlide(1)" class="hover-shadow cursor"><br><center><b style="font-family: 'Times New Roman', Times, serif;font-size: 40px;">40-50%</b><small style="font-family: 'Times New Roman', Times, serif;font-size: 25px;">OFF*</small></center></div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="col-container">
+    <div class="p-3 border bg-light">
+  <center><p class="fs-4 text-dark fw-bold"style="font-family: Arial, Helvetica,sans-serif">OUR STORES</p></center>
+  <center><p class="fs-2 text-dark fw-bold">Find everything for your every need</p></center>
+  <br>
+  <div class="container-fluid mt-3">
+  
+    <div class="row">
+      <div class="col-sm-3 p-3  "> <img src="./store1.jpg" style="width:100%" onclick="openmodel();currentSlide(1)" class="hover-shadow cursor"></div>
+      <div class="col-sm-3 p-3 "> <img src="./store2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+      </div>
+      <div class="col-sm-3 p-3 "> <img src="./store3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor"></div>
+      <div class="col-sm-3 p-3 "> <img src="./store4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor"></div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="col-container" >
+    <div class="border border-primary">
+      <div class="p-3 mb-2 bg-light text-dark">
+<center><p class="fs-4 text-dark fw-bold" style="font-family:;color: blue;">AJIO CARES</p></center>
+<center><p class="font-weight-normal ">WE DO NOT ASK FOR YOUR BANK ACCOUNTS OR CREDID CARDS DETAILS VERBALLY OR TELEPHONICALLY</p></center>
+<center><p class="font-weight-normal">WE ALSO DO NOT ASK FOR MONEY TO PARTICIPATE IN ANY OF OUR OFFERS OR RUN ANY LUCKY DRAWS</p></center>
+</div>
+</div>
+</div>
+</div>
+
+    <div class="container-fluid">
+      <div class="p-3 mb-2 bg-secondary text-white">
+
+      <footer class="text-center text-lg-start border border-white mt-xl-5 pt-4">
+      
+      <div class="container p-4">
+        
+        <div class="row">
+          
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <h5 class="text-uppercase mb-4">Help</h5>
+  
+            <ul class="list-unstyled mb-4">
+              <li>
+                <a href="#!" class="text-white">Track Your Order</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">FAQ</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Customer Care</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Returns & Cancellation</a>
+              </li>
+            </ul>
+          </div>
+          
+  
+          
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <h5 class="text-uppercase mb-4">AJIO</h5>
+  
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!" class="text-white">Who We Are</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Terms & Condition</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Join Our Team</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Returns & Exchanges</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Payment</a>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <h5 class="text-uppercase mb-4">Shop By</h5>
+  
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!" class="text-white">Store</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">New Arrivals</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Collections</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Brand Directory</a>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <h5 class="text-uppercase mb-4">Join AJIO</h5>
+  
+            <div class="form-outline form-white mb-4">
+              <label class="form-label" for="form5Example2">Email address</label>
+              <input type="email" id="form5Example2" class="form-control" />
+              
+            </div>
+  
+            <button type="submit" class="btn btn-dark  text-white">Sign In</button>
+          </div>
+          
+        </div>
+        
+      </div>
+      
+   
+      <div class="text-center p-3 border-top border-white">
+        © 2022 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/">ajio.com</a>
+      </div>
+      
+    </footer>
+    
+  </div>
+ 
+</div>
+  
+
+</body>
+</html>
